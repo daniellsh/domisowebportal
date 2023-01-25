@@ -18,7 +18,20 @@ $row = mysqli_fetch_assoc($result);
 </div>
 <!-- End Banner -->
 
+<!-- Start Carousel -->
 
+<!-- End Carousel -->
+<div class="owl-carousel mb-5">
+  <div class="item">
+    <img style="height:600px;object-fit:cover;" src="<?= empty($row['slider_image_1']) ? "./assets/images/slider.jpg" : './uploads/content/' . $row['slider_image_1'] ?>" alt="Carousel 1">
+  </div>
+  <div class="item">
+    <img style="height:600px;object-fit:cover;" src="<?= empty($row['slider_image_2']) ? "./assets/images/slider.jpg" : './uploads/content/' . $row['slider_image_2'] ?>" alt="Carousel 2">
+  </div>
+  <div class="item">
+    <img style="height:600px;object-fit:cover;" src="<?= empty($row['slider_image_3']) ? "./assets/images/slider.jpg" : './uploads/content/' . $row['slider_image_3'] ?>" alt="Carousel 3">
+  </div>
+</div>
 <!-- Start Slogn -->
 <!-- End Slogn -->
 <?php include('components/footer.php'); ?>
